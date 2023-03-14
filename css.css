@@ -1,0 +1,115 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 1800px;
+    transition: 0.3s;
+    background-color: #ECEFF1;
+}
+
+/* Formatando o header */
+header {
+    background-color: #ECEFF1;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    box-shadow: 0.5px 0.5px  10px 0.5px black;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+/* Formatando o h1 */
+h1{
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Formatando o container */
+.container-kaique {
+    border: 1px solid black;
+    display: flex;
+    width: 700px;
+    height: 800px;
+    margin: 100px auto;
+}
+
+/* Formatando o segundo container */
+#subcontent {
+    
+    display: flex;
+    width: 600px;
+    height: 500px;
+   margin: 100px auto;
+    align-items: center;
+
+}
+
+fieldset {
+    border: none;
+}
+/* Formatando as inpu type="text" */
+input[type="text"]{
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 300px;
+    margin: 10px;
+}
+
+/* Formatando o button */
+input[type="button"]{
+    margin-left: 10px;
+}
+/* Implementando o modo dark na página */
+#contentbuttondark {
+    display: flex;
+    float: right;
+    margin-right: 10px;
+}
+/* Formatando o span */
+span{
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* :Formatando o espan dentro do caontainer */
+.tamanho-span{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+/* Escondendo o input checkbox */
+input[Type="checkbox"] {
+    display: none;
+}
+
+.dark,
+.dark header {
+    background: #262626;
+    color: #fff;
+}
+
+/* Deixando o container branco */
+.toggle-white {
+    background-color: #fff;
+}
+
+/* Aumentando o tamanho dos ícones do darkMode */
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* Escondenco a lua quando estiver no whiteMode */
+.bi-moon {
+    display: none;
+}
+/* Removendo o ícone do sol quando o modo dark estiver não ativo */
+.dark .bi-sun{
+    display: none;
+}
+/* Adicionando a lua quano o modo dark estiver tivo */
+.dark .bi-moon{
+    display: block;
+}
+.dark .card{
+    background: #37474f;
+}
