@@ -13,11 +13,6 @@ function calculateCelsius() {
         let divOld = document.querySelector('#append_c');
         // divOld.appendChild(text)
         divOld.appendChild(text);
-        
-        // Verificando se não é o valor correto digitado
-        if (!celcius != 'C'  && !fahrenheit != 'F  ') {
-            alert('Esse caractere não existe');
-        };
     };
 };
 
