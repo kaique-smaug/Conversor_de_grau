@@ -7,7 +7,9 @@ function calculateCelsius() {
     let fahrenheit = document.querySelector('#fahrenheit').value.toUpperCase().includes('C');
     // Criando variáveis com as fórmulas
     if (celcius === true) {
-        let formulaC = (fahrenheit - 32) * 5/9       
+        let formulaC = (fahrenheit - 32)/1.8
+        
+        
         // let newDiv = document.createElement('div');
         let text = document.createTextNode(`${formulaC.toFixed(2)}C`);      
         let divOld = document.querySelector('#append_c');
@@ -21,7 +23,7 @@ function calculateFah() {
     let fahrenheit = document.querySelector('#fahrenheit').value.toUpperCase().includes('C');
     // Criando variáveis com as fóormulas
     if (fahrenheit === true) {
-        let formulaF = (celcius * 9/5) +32
+        let formulaF = (celcius * 1.8) +32
         let text2 = document.createTextNode(`${formulaF.toFixed(2)}F`);
         let divOdl2 = document.querySelector('#append_f')
         divOdl2.appendChild(text2)
